@@ -4,42 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
-    <title>basic recipes</title>
+    <title>basic cookie recipes</title>
   </head>
   <body>
-    <header>
-      <h1>Basic recipes</h1>
-    </header>
-    <main>
-      <form action="recipe/">
-        <input
-          type="text"
-          name="recipe"
-          id="recipe"
-          placeholder="Enter the ingredient for the recipe"
-          autofocus
-          required
-          class="recipe-input"
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div class="recipe-body">
-        3 large sweet potatoes (about 900g), peeled and cut into large chunks
-        <br />
-        oil, for drizzling
-        <br />
-        6-8 chicken thighs, skin left on
-        <br />
-        2 red onions, cut into wedges 25g sachet piri-piri spice mix (or a mild
-        version, if you like)
-        <br />
-        300g long-stem broccoli
-      </div>
-    </main>
+    <div class="container">
+      <header>
+        <h1>Basic Cookie recipes</h1>
+      </header>
+      <main>
+        <form action="recipe/">
+          <input
+            type="text"
+            name="recipe"
+            id="recipe"
+            placeholder="Enter the ingredient for the cookie recipe"
+            autofocus
+            required
+            class="recipe-input"
+            autocomplete="off"
+          />
+          <input type="submit" class="recipe-button" />
+        </form>
+        <div class="recipe-body">
+          225g butter, softened
 
-    <script src="src/styles.css"></script>
+          <br />
+          110g caster sugar
+          <br />
+          275g plain flour
+          <br />
+          1 tsp cinnamon or other spices (optional)
+          <br />
+          75g white or milk chocolate chips (optional)
+        </div>
+      </main>
+    </div>
   </body>
+
   <footer>
     This AI project was coded by
     <a href="https://github.com/SimKitkat" target="_blank">Simone</a> is opened
@@ -54,4 +55,6 @@
       >Netlify</a
     >.
   </footer>
+
+  <script src="src/styles.css"></script>
 </html>
