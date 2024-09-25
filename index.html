@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>basic cookie recipes</title>
   </head>
   <body>
@@ -12,11 +13,10 @@
         <h1>Basic Cookie recipes</h1>
       </header>
       <main>
-        <form action="recipe/">
+        <form class="recipe">
           <input
             type="text"
-            name="recipe"
-            id="recipe"
+            id="recipe-input"
             placeholder="Enter the ingredient for the cookie recipe"
             autofocus
             required
@@ -25,36 +25,24 @@
           />
           <input type="submit" class="recipe-button" />
         </form>
-        <div class="recipe-body">
-          225g butter, softened
-
-          <br />
-          110g caster sugar
-          <br />
-          275g plain flour
-          <br />
-          1 tsp cinnamon or other spices (optional)
-          <br />
-          75g white or milk chocolate chips (optional)
-        </div>
+        <div class="recipe-body"></div>
       </main>
     </div>
+    <footer>
+      This AI project was coded by
+      <a href="https://github.com/SimKitkat" target="_blank">Simone</a> is
+      opened sourced on
+      <a
+        href="https://github.com/SimKitkat/basic-recipe-generator"
+        target="_blank"
+        >Github</a
+      >
+      and is hosted on
+      <a href="https://basic-recipe-generator.netlify.app/" target="_blank"
+        >Netlify</a
+      >.
+    </footer>
+
+    <script src="src/index.js"></script>
   </body>
-
-  <footer>
-    This AI project was coded by
-    <a href="https://github.com/SimKitkat" target="_blank">Simone</a> is opened
-    sourced on
-    <a
-      href="https://github.com/SimKitkat/basic-recipe-generator"
-      target="_blank"
-      >Github</a
-    >
-    and is hosted on
-    <a href="https://basic-recipe-generator.netlify.app/" target="_blank"
-      >Netlify</a
-    >.
-  </footer>
-
-  <script src="src/styles.css"></script>
 </html>
