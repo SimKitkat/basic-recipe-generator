@@ -42,7 +42,13 @@ form {
   width: 150px;
   padding: 16px;
 }
-.recipe-body {
+
+.hint {
+  font-size: 12px;
+  padding-left: 20px;
+  opacity: 0.6;
+}
+.recipebody {
   font-size: 16px;
   font-weight: 200;
   color: #903b0d;
@@ -51,6 +57,24 @@ form {
   border-left: 3px solid #3a170d;
 }
 
+.hidden {
+  display: none;
+}
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+  font-size: 16px;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
 footer {
   text-align: center;
   color: #3a170d;
